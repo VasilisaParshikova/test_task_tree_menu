@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+{% load menu_tag %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" as="font">
+    <script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+
+<div id="main_menu">
+    {% draw_menu 'main_menu' %}
+</div>
+<div id="manu2">
+    {% draw_menu 'menu2' %}
+</div>
+<p></p>
+{{menu}}
+</body>
+</html>
